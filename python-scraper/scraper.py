@@ -36,6 +36,7 @@ def main(output_dir):
     # Open a webpage using Firefox (default) or Chrome (uncomment to use)
     driver = webdriver.Firefox() # needs geckodriver in PATH
     #driver = webdriver.Chrome() # needs chromedriver in PATH
+    #driver = webdriver.PhantomJS() # needs an install of phantomjs, see dockerfile for example
     driver.get("https://www.example.com/")
 
     # Wait for the link to load
